@@ -1,26 +1,28 @@
 import React from "react";
+import Products  from "./Products";
 
-const Home = () => {
+function Home() {
   return (
     <div className="hero">
-      <div class="card text-bg-dark text-white border-0">
+      <div className="card text-bg-dark text-white border-0">
         <img
           src="/assets/bg.jpg"
-          class="card-img"
+          className="card-img"
           alt="background"
           height="550px"
         />
-        <div class="card-img-overlay d-flex flex-column justify-content-center">
+        <div className="card-img-overlay d-flex flex-column justify-content-center">
           <div className="container">
-            <h5 class="card-title display-3 fw-bolder mb-40 text-black">
+            <h5 className="card-title display-3 fw-bolder mb-40 text-black">
               New Season Arrivals
             </h5>
-            <p class="card-text lead fs-2 text-black">
+            <p className="card-text lead fs-2 text-black">
               Check out all the trends
             </p>
           </div>
         </div>
       </div>
+      <Products/>
     </div>
   );
 };
